@@ -1,0 +1,19 @@
+{
+    "sources": [
+        {
+            "type": "google_search",
+            "query": "streetwear trends 2025",
+            "frequency": "daily"
+        },
+        {
+            "type": "pinterest",
+            "board": "techwear-aesthetic",
+            "limit": 10
+        },
+        {
+            "type": "instagram",
+            "hashtag": "cyberpunkfashion",
+            "limit": 5
+        }
+    ]
+}

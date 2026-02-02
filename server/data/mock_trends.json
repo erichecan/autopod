@@ -1,0 +1,98 @@
+{
+    "google_search": [
+        {
+            "title": "2025 Streetwear Forecast: Oversized & Acid Wash",
+            "description": "The resurgence of 90s grunge is hitting hard. Expect heavy acid wash denim, boxy tees, and distressed fabrics.",
+            "image_url": "https://images.unsplash.com/photo-1523396864543-15a1a9e56dc4?w=500&q=80",
+            "source": "Vogue Business"
+        },
+        {
+            "title": "Techwear Evolution: Function meets Dystopia",
+            "description": "Utility vests, excessive straps, and waterproof matte fabrics are defining the new urban ninja look.",
+            "image_url": "https://images.unsplash.com/photo-1552374196-c4e7ffc6e126?w=500&q=80",
+            "source": "Hypebeast"
+        },
+        {
+            "title": "Sustainable Earth Tones: The 'Gorpcore' Shift",
+            "description": "Muted greens, browns, and beiges derived from natural dyes. Outdoor gear aesthetics entering casual wear.",
+            "image_url": "https://images.unsplash.com/photo-1503342217505-b0a15ec3261c?w=500&q=80",
+            "source": "WGSN"
+        },
+        {
+            "title": "Neo-Psychedelia: Liquid Chrome & Neon",
+            "description": "Digital art influence is huge. Liquid metal textures combined with neon gradients.",
+            "image_url": "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?w=500&q=80",
+            "source": "Highsnobiety"
+        },
+        {
+            "title": "Maximalist Typography: Bold Statements",
+            "description": "Fonts are getting bigger, bolder, and distorted. Readable text is secondary to visual impact.",
+            "image_url": "https://images.unsplash.com/photo-1503342394128-c104d54dba01?w=500&q=80",
+            "source": "Pinterest Trends"
+        }
+    ],
+    "pinterest": [
+        {
+            "title": "Cyber Y2K Aesthetics",
+            "description": "Futuristic 2000s vibes. Metallic puffers, wraparound shades, and star graphics.",
+            "image_url": "https://images.unsplash.com/photo-1617391764619-35a0ce0d96d9?w=500&q=80",
+            "source": "Pinterest Board: Y2K Vision"
+        },
+        {
+            "title": "Abstract Line Art Faces",
+            "description": "Minimalist continuous line drawings of faces and figures on neutral tees.",
+            "image_url": "https://images.unsplash.com/photo-1574180566232-a8465d31405c?w=500&q=80",
+            "source": "Pinterest Board: Minimal Art"
+        },
+        {
+            "title": "Retro Anime Vaporwave",
+            "description": "80s anime stills mixed with glitch art and kanji characters. Pink and teal palette.",
+            "image_url": "https://images.unsplash.com/photo-1578632292335-df3abbb0d586?w=500&q=80",
+            "source": "Pinterest Board: Anime Core"
+        },
+        {
+            "title": "Botanical Dark Academia",
+            "description": "Detailed scientific illustrations of mushrooms and ferns on dark fabrics.",
+            "image_url": "https://images.unsplash.com/photo-1518556622415-g24528148332?w=500&q=80",
+            "source": "Pinterest Board: Dark Cottage"
+        },
+        {
+            "title": "Spray Paint Stencil Art",
+            "description": "Banksy-style stencil graphics. Raw, rebellious, and textured.",
+            "image_url": "https://images.unsplash.com/photo-1583209814683-c023dd293cc6?w=500&q=80",
+            "source": "Pinterest Board: Street Art"
+        }
+    ],
+    "instagram": [
+        {
+            "title": "#OOTD: Layering Masterclass",
+            "description": "Influencers are mixing hoodies under flannels under denim jackets. Texture overload.",
+            "image_url": "https://images.unsplash.com/photo-1515886657613-9f3515b0c78f?w=500&q=80",
+            "source": "@streetwear_daily"
+        },
+        {
+            "title": "#Sneakerhead Matching Fit",
+            "description": "Perfect color coordination between Jordans and graphic tees. Red and Black dominance.",
+            "image_url": "https://images.unsplash.com/photo-1552374196-1ab2a1c593e8?w=500&q=80",
+            "source": "@kicksonfire"
+        },
+        {
+            "title": "#VintageTee Grail",
+            "description": "Washed out black tees with cracked prints of 90s rock bands. The 'lived-in' look.",
+            "image_url": "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=500&q=80",
+            "source": "@vintage_hunter"
+        },
+        {
+            "title": "#MonochromeFit Studio",
+            "description": "All white everything. Playing with fabric weight and opacity instead of color.",
+            "image_url": "https://images.unsplash.com/photo-1583743814966-8936f5b7be1a?w=500&q=80",
+            "source": "@minimal_archive"
+        },
+        {
+            "title": "#CyberPunk Fashion Week",
+            "description": "Neon LED accessories and reflective materials caught in flash photography.",
+            "image_url": "https://images.unsplash.com/photo-1506157786151-b8491531f063?w=500&q=80",
+            "source": "@future_fashion"
+        }
+    ]
+}

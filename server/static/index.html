@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Employee - Design Generator</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Sidebar -->
+        <aside class="sidebar">
+            <div class="logo">AI DESIGNER</div>
+            <nav>
+                <div class="nav-item active" data-tab="dashboard">Dashboard</div>
+                <div class="nav-item" data-tab="trends">Trend Board</div>
+                <div class="nav-item" data-tab="hunter" style="color: #60a5fa;">Trend Hunter</div>
+                <div class="nav-item" data-tab="gallery">Gallery</div>
+            </nav>
+        </aside>
+
+        <!-- Main Content -->
+        <main class="main-content">
+            <header>
+                <h1>Dashboard</h1>
+                <button id="run-cycle-btn" class="primary-btn">Run Design Cycle</button>
+            </header>
+
+            <!-- Dashboard View -->
+            <div id="dashboard-view" class="view active">
+
+                <!-- Status Cards -->
+                <div class="stats-grid">
+                    <div class="card stat-card">
+                        <h3>Active Trends</h3>
+                        <div class="value" id="stats-trends">0</div>
+                    </div>
+                    <div class="card stat-card">
+                        <h3>Generated Ideas</h3>
+                        <div class="value" id="stats-ideas">0</div>
+                    </div>
+                    <div class="card stat-card">
+                        <h3>Gallery Assets</h3>
+                        <div class="value" id="stats-assets">0</div>
+                    </div>
+                </div>
+
+                <!-- Live Pipeline -->
+                <div class="pipeline-section">
+                    <h2>Live Activity</h2>
+                    <div class="pipeline-steps">
+                        <!-- Step 1: Trends -->
+                        <div class="step-card" id="step-trends">
+                            <div class="step-header">
+                                <span class="step-icon">1</span>
+                                <h3>Market Research</h3>
+                            </div>
+                            <div class="step-content" id="trend-content">
+                                <p class="placeholder">Waiting for cycle...</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 2: Analysis -->
+                        <div class="step-card" id="step-analysis">
+                            <div class="step-header">
+                                <span class="step-icon">2</span>
+                                <h3>Design Intelligence</h3>
+                            </div>
+                            <!-- Idea Card Container -->
+                            <div class="step-content" id="analysis-content">
+                                <p class="placeholder">Waiting for input...</p>
+                            </div>
+                        </div>
+
+                        <!-- Step 3: Result -->
+                        <div class="step-card" id="step-result">
+                            <div class="step-header">
+                                <span class="step-icon">3</span>
+                                <h3>Production</h3>
+                            </div>
+                            <div class="step-content" id="result-content">
+                                <p class="placeholder">Waiting for analysis...</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Trend Board View -->
+            <div id="trends-view" class="view" style="display: none;">
+                <h2>Trend Board</h2>
+                <div id="trend-board-grid"></div>
+            </div>
+
+            <!-- Trend Hunter / Seed View -->
+            <div id="hunter-view" class="view" style="display: none;">
+                <div style="display:flex; justify-content:space-between; align-items:center; margin-bottom:1.5rem;">
+                    <h2>Trend Hunter 🕵️</h2>
+                    <button id="run-harvest-btn" class="primary-btn" onclick="runHarvest()" style="background:#10b981;">
+                        Run Daily Harvest
+                    </button>
+                </div>
+
+                <div style="display:grid; grid-template-columns: 1fr 2fr; gap:2rem;">
+                    <!-- Left: Categories -->
+                    <div class="card">
+                        <h3>Seed Database</h3>
+                        <div id="seed-categories-list"
+                            style="margin-top:1rem; max-height:500px; overflow-y:auto; font-size:0.9rem;">
+                            <p class="placeholder">Loading...</p>
+                        </div>
+                    </div>
+
+                    <!-- Right: Harvest Results -->
+                    <div class="card">
+                        <h3>Harvested Keywords (Prioritized)</h3>
+                        <div id="harvest-results" style="margin-top:1rem;">
+                            <p class="placeholder">Run "Daily Harvest" to find new trends...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Gallery View -->
+            <div id="gallery-view" class="view" style="display: none;">
+                <h2>Asset Gallery</h2>
+                <div id="gallery-grid" class="gallery-grid"></div>
+            </div>
+        </main>
+    </div>
+    <div id="video-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close-modal">&times;</span>
+            <div id="video-player-container"></div>
+        </div>
+    </div>
+    <script src="/js/app.js"></script>
+</body>
+
+</html>

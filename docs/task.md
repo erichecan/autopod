@@ -1,0 +1,23 @@
+# Product Requirement Analysis - T-Shirt Design Automation
+
+- [/] Analyze existing demo website <!-- id: 0 -->
+    - [/] Visit https://mprof.ai-builders.space/ <!-- id: 1 -->
+    - [/] Explore "Ideas" menu and analysis details <!-- id: 2 -->
+    - [/] Understand the workflow from search to image generation <!-- id: 3 -->
+- [/] Document Product Requirements <!-- id: 4 -->
+    - [/] Summarize the core workflow <!-- id: 5 -->
+    - [x] Detail the AI analysis and Prompt Engineering features <!-- id: 6 -->
+    - [x] Outline the Image Generation process <!-- id: 7 -->
+    - [x] Describe the Upload/Integration features (Etsy, etc.) <!-- id: 8 -->
+    - [x] identifying missing features or areas for completion <!-- id: 9 -->
+- [/] Refine Requirements & Technical Plan <!-- id: 10 -->
+    - [x] Analyze configurable trend scraper architecture <!-- id: 11 -->
+    - [x] Define "Attribute to Prompt" translation logic <!-- id: 12 -->
+    - [x] Design Video Generation pipeline (Sora 2/Nanobanana) <!-- id: 13 -->
+    - [x] Update product_requirements.md <!-- id: 14 -->
+    - [x] Create implementation_plan.md <!-- id: 15 -->
+- [ ] Project Setup <!-- id: 16 -->
+    - [ ] Create directory structure (server/config, agents, etc.) <!-- id: 17 -->
+    - [ ] Copy documentation to project folder <!-- id: 18 -->
+    - [ ] Initialize git repository <!-- id: 19 -->
+    - [ ] Create virtual environment & install dependencies <!-- id: 20 -->
