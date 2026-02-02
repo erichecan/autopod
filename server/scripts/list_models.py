@@ -1,6 +1,8 @@
 import requests
 
-API_KEY = "AIzaSyBYMj9QrjHPaGi4aWQMctMykV3N3XUNaGw"
+import os
+
+API_KEY = os.environ.get("GOOGLE_API_KEY", "YOUR_API_KEY")
 BASE_URL = "https://generativelanguage.googleapis.com/v1beta/models"
 
 def list_models():

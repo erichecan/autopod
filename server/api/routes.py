@@ -28,23 +28,27 @@ nano_banana = NanoBananaService() # New High Fidelity VTON
 
 @router.post("/generate-video")
 async def generate_video(request: VideoRequest):
-    """Starts a Veo 3.1 video job from the VTON image."""
-    try:
-        # Prompt Logic: Image-to-Video (Visuals Reference)
-        # We now provide the VTON image directly to Veo.
-        motion_prompt = (
-            "Cinematic Runway Walk. "
-            "Bring this fashion model to life. "
-            "The model executes a confident runway walk forward. "
-            "The customized t-shirt design (abstract colorful bubbles) must remain stable and clearly visible on the chest. "
-            "Photorealistic, 4k, cinematic lighting. Duration: 15s."
-        )
-        # Ensure we are passing the local path if possible, or handling the URL correctly in service
-        # For this demo, we assume image_url is the local path or accessible
-        job_id = await veo_service.start_generation(request.image_url, motion_prompt)
-        return {"job_id": job_id, "status": "pending"}
-    except Exception as e:
-        raise HTTPException(status_code=500, detail=str(e))
+    """
+    (DISABLED) Starts a Veo 3.1 video job.
+    Disabled to save costs ($2.25/video). Focus on VTON Images only.
+    """
+    return {"status": "skipped", "message": "Video generation is currently disabled for cost optimization. Please use VTON images."}
+    # try:
+    #     # Prompt Logic: Image-to-Video (Visuals Reference)
+    #     # We now provide the VTON image directly to Veo.
+    #     motion_prompt = (
+    #         "Cinematic Runway Walk. "
+    #         "Bring this fashion model to life. "
+    #         "The model executes a confident runway walk forward. "
+    #         "The customized t-shirt design (abstract colorful bubbles) must remain stable and clearly visible on the chest. "
+    #         "Photorealistic, 4k, cinematic lighting. Duration: 15s."
+    #     )
+    #     # Ensure we are passing the local path if possible, or handling the URL correctly in service
+    #     # For this demo, we assume image_url is the local path or accessible
+    #     job_id = await veo_service.start_generation(request.image_url, motion_prompt)
+    #     return {"job_id": job_id, "status": "pending"}
+    # except Exception as e:
+    #     raise HTTPException(status_code=500, detail=str(e))
 
 @router.get("/jobs/{job_id}")
 async def get_job_status(job_id: str):

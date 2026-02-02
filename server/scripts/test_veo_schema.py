@@ -1,7 +1,6 @@
 import requests
-import json
-
-API_KEY = "AIzaSyBYMj9QrjHPaGi4aWQMctMykV3N3XUNaGw"
+import os
+API_KEY = os.environ.get("GOOGLE_API_KEY", "YOUR_API_KEY")
 MODEL_NAME = "models/veo-3.1-fast-generate-preview"
 URL_PREDICT = f"https://generativelanguage.googleapis.com/v1beta/{MODEL_NAME}:predict"
 URL_LRO = f"https://generativelanguage.googleapis.com/v1beta/{MODEL_NAME}:predictLongRunning"
